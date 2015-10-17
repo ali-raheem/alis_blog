@@ -1,0 +1,11 @@
+# Site settings
+title: Ali's Blog
+email: ali@theRaheemFamily.co.uk
+description: My blog, mostly a place to brag.
+baseurl: "/~ali"
+url: "https://theRaheemfamily.co.uk/" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  wolfmankurd
+
+# Build settings
+markdown: kramdown

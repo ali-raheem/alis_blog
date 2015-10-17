@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Some possibly useful shell trickery!"
+date:   2015-10-17 01:27:13
+categories: site update
+---
+
+I thought I'd upload the short code snippet I used to alter all the references to the old blog in my online repository.
+
+```
+$ find . -type f -print0 | xargs -0 sed -i 's:~ali/:~ali/old_blog/:g'
+```
+
+This uses find to look for all the files recursively and passes them via xargs to sed where an inplace replacement replaces all references to ~ali/ the old path with the new one ~ali/old_blog/.
+
+Anyone that's all for now.
