@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "/r/dailyprogrammer Easy 236 C - Tetris Random "
+date:   
+categories: dailyprogrammer c
+---
+
+This challenge described [here](https://www.reddit.com/r/dailyprogrammer/comments/3ofsyb/20151012_challenge_236_easy_random_bag_system/) explains that the randomness in Tetris is not what many thing, it doesn't simply spew random pieces or "tetreminos" at you but simulates selection without replacement from a bag, thus you may only get two of the same in a row and will never go more than 6 pieces without seeing a particular one.
+
+The challenge is to replicate this effect. Most experienced programmers will immeditaly realise that the best way to do this is with a shuffle in particular a [Knuth shuffle AKA Fischer-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). The reddit thread was littered with inexperienced programmers re-inventing the wheel (poorly).
+
+Here was my code which sparked outrage, (rightly so some of it is disturbingly - but in a fun way).
+
+{% highlight c %}
+#include <stdio.h>
+#include <string.h>
+#include <stdint.h>
+
+void shuffle();
+uint32_t rand;
+char string[] = "OISZLJT";
+const int len = 7;
+
+int main(int argc, char **argv) {
+	int i = 8;
+	char buffer[56];
+	printf("rand: %d, &i: %x\n", rand, &i);
+	rand += &i;		// I am a filthy pig and should be shot
+
+	while( i-- ){
+                shuffle();
+		strncpy(buffer+7*i, string, 7);
+        }
+	buffer[50] = 0;
+	puts(buffer);
+        return 0;
+}
+
+void shuffle() {
+	int i, j;
+	/* FIsher-Yates/Knuth shuffle */
+	for(i = len - 1; i >=0 ; i--) {
+		j = rand % len;
+		string[len] = string[i];
+		string[i] = string[j];
+		string[j] = string[len];
+/* Rand as LCG
+William H. Press, Saul A. Teukolsky, William T. Vetterling and Brian P. Flannery
+Rand is modulo 32bit
+*/
+		rand *= 1013904223;
+		rand += 1664525;
+	}
+        string[len] = 0;
+}
+{% endhighlight %}
+
+Lets break this one down. The most interesting thing about my code is it is probably nearly identical to most conventional code however I do re-invent the wheel and do so well!
+
+Firstly, I don't bother linking to random for my random numbers I use a linear congruent generator and optimize it by making use of the fact that a uint32_t is effectively a 2^32 modulo. I borrow a multiplier and increment from Numerical Recepies. There is a flaw in this I'll leave it for the reader to work out. (i.e. I've made a simple mistake in the implementation it's not optimal).
+
+I also do the Knuth shuffle myself this is likely what all shuffling implementations do, and certainly what python's random.shuffle() does.
+
+This is rather simply but there are a few delightful tricks in it. Firstly char [] string is _not a string_ I lose the null termination early. It's a char array. It is a buffer. I use the null byte as my temp storage in the knuth shuffle :)
+
+Also without srand() how do I seed the LCG? Well I use my ASLR of course and attempted to use the uninitialised rand variable however gcc seems to clear the stack in it's prolouge. (nuts...) Still the ASLR provides plenty of randomness for such a simple task.
+
+The only thing worth mentioning is the buffer+7*i indexing. This simply moves along the large buffer equvilent to &buffer[7*i].
+
+I got a few PMs about this code being an abomination but it runs gloriously. And is in effect portable assembler.
+
+I know what the compiler will do with this code. I can picture what the assembly will look like that is so great about c and what is lost in c++!
+
+Enjoy.
+
+Ali

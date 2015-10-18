@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "id_book v1.0.0 - simple and portable ID management database"
+date:   2015-10-17 20:27:13
+categories: id_book software update
+---
+
+I spent some time yesterday boning up on my Python, specifically learning to migrate to python3 from 2.x, I also took the opportunity to lean about making GUI's with QT5 through PyQt5. This simple database suited to simple id records combines sqlite3 with python3 and Qt5.
+
+I'm relitively done with the coding and happy with the feature set and don't really see it changing much so I've moved it on to v1.0.0 and am releasing it with a free-all-permissive license.
+
+You can find it [on gitHub here](https://github.com/wolfmankurd/id_book).
+
+As always, enjoy.
+
+Ali
