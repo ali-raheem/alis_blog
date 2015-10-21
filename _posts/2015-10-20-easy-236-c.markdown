@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "/r/dailyprogrammer Easy 236 C - Tetris Random "
-date:   
+date:   2015-10-21-16-22-49
 categories: dailyprogrammer c
 ---
 
@@ -72,5 +72,9 @@ I got a few PMs about this code being an abomination but it runs gloriously. And
 I know what the compiler will do with this code. I can picture what the assembly will look like that is so great about c and what is lost in c++!
 
 Enjoy.
+
+This post is a bit belated and the latest challenge is now out 237, however it's boring so my next post will be using c as an anagram finder using binary tree's and linked lists to make a library you access from python.
+
+Python can solve the current challenge in a few lines (like most of them which makes for uninsteresing blog posts!)
 
 Ali
