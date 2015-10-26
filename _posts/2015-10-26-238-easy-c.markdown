@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Word generator"
+date:   2015-10-26 15:56:00
+categories: dailyprogrammer c
+---
+
+This [/r/Dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/comments/3q9vpn/20151026_challenge_238_easy_consonants_and_vowels/) prompt tasks you with creating words randomly based on a provided input for example Vcvvc would be a capitalised vowel followed by a consonant, two vowel and then a consonant.
+
+I make use of the excellent readline library for this.
+
+Here's the code, the only worth while piece is the capital toggling. I convert ASCII lowercase to caps by adding `'A' -'a'`. Simply shifting it along the ASCII chart.
+
+{% highlight c %}
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <readline/readline.h>
+//#include <random.h>
+#include <time.h>
+
+int main(int argc, char **argv) {
+  srand(time(NULL));
+  char *line;
+  const char *consonants = "bcdfghjklmnpqrstvwxyz";
+  const char *vowels = "aeiou";
+  do{
+  line = readline(NULL);
+  int i, cap;
+  for(i=0; i<strlen(line); i++) {
+    cap = 0;
+    switch (line[i]){
+    case 'C':
+      cap = 'A' - 'a';
+    case 'c':
+      line[i] = consonants[rand()%strlen(consonants)] + cap;
+      break;
+    case 'V':
+      cap = 'A' - 'a';
+    case 'v':
+      line[i] = vowels[rand()%strlen(vowels)] + cap;
+      break;
+    }
+  }
+  puts(line);
+  }while(0 != strcmp("", line));
+}
+{% endhighlight %}
+
+Note the more orthidox use of the random function :) This actually simply uses a LCG like my last one.
+
+Enjoy,
+
+Ali
