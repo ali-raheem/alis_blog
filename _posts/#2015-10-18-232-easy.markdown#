@@ -1,0 +1,135 @@
+
+I’ve been doing some of the challenges I’ve found on /r/DailyProgrammer. I thought I’d start posting them here, ‘cause why not!
+
+This is challenge 232 - Easy which I’ve done in Rust, python3 and C in that order, here’s my C implementation which I thought was most interesting. Well mostly because it attracted the most attention ( abuse) on reddit :)
+
+The challenge put simply [(and found fully here)](https://www.reddit.com/r/dailyprogrammer/comments/3kx6oh/20150914_challenge_232_easy_palindromes/) to identify palindromes in input text.
+
+The format of the input is thus, first line contains integer giving number of further input lines. All punctuation and case should be ignored.
+
+Your only output should be regarding it’s palindromness.
+
+{% highlight c %}
+/*
+Take input first line integer number of lines to read.
+Subsequent lines should contain data.
+Output "(not a) pallindrome" based on that input.
+Author: Ali Raheem
+*/
+#include <stdio.h>
+#include <assert.h>
+#include <stdlib.h>
+
+unsigned int read_input(char *);
+unsigned int buffer_size = 100;
+
+int main(int argc, char **argv) {
+  char *buffer = (char *) malloc(buffer_size);
+  assert(NULL != buffer);
+  unsigned int len = read_input(buffer);
+  unsigned int i = 0;
+  while(len > 0){
+    if (buffer[i++] != buffer[--len]){
+      printf("NOT A ");
+      break;
+    }
+  }
+  puts("PALLINDROME");
+  return(EXIT_SUCCESS);
+}
+
+unsigned int read_input(char *buffer) {
+  unsigned int num_lines;
+  int i = scanf("%u", &num_lines);
+  assert(1 == i);
+  num_lines += 1;
+  i = 0;
+  char c;
+  for(;;){
+    if (c == EOF)
+	      break;
+    if (0 == num_lines) {
+      buffer[i] = 0;
+      break;
+    }
+    if (i == buffer_size - 1){
+	/* realloc */
+	buffer_size *= 2;
+	buffer = realloc(buffer, buffer_size);
+	assert(NULL != buffer);
+      }
+    c = getc(stdin);
+    if (c == '\n') {
+	num_lines--;
+	continue;
+      }
+    if (c >= 'A' && c <= 'Z') {
+	c -= 'A';
+	c += 'a';
+      }
+    if (c >= 'a' && c <= 'z') {
+	buffer[i++] = c;
+      }
+  }
+  return i;
+}
+{% endhighlight %}
+
+Lets break this down.
+
+{% highlight c %}
+while(len > 0){
+  if (buffer[i++] != buffer[--len]){
+    printf("NOT A ");
+    break;
+  }
+}
+{% endhighlight %}
+
+This takes len (length of the data in buffer) and checks it like lighting a candle at both ends and bails out if it finds a mismatch, other wise it carries on until it reaches the beginning. It only prints “NOT A” as we will print pallindrome either way.
+
+{% highlight c %}
+unsigned int num_lines;
+int i = scanf("%u", &num_lines);
+assert(1 == i);
+{% endhighlight %}
+
+This got some abuse because apparently scanf can never be safely used. Well just try and fuck this up then. No luck? Well scanf is pretty safe so long as you know what you want and are willing to crash-burn if you don’t get it i.e. we only want an unsigned integer and we refuse to continue otherwise (assert()).
+
+{% highlight c %}
+if (i == buffer_size - 1){
+/* realloc */
+buffer_size *= 2;
+buffer = realloc(buffer, buffer_size);
+assert(NULL != buffer);
+  }
+{% endhighlight %}
+
+Here if we find we are approaching the end of the buffer (i is nearly buffer_size) we realloc to a larger size realloc happily free’s for us. We simply jump to twice the buffer size. On linux this is no real problem. Our program is short lived anyway.
+
+{% highlight c %}
+if (c >= 'A' && c <= 'Z') {
+c -= 'A';
+c += 'a';
+  }
+if (c >= 'a' && c <= 'z') {
+buffer[i++] = c;
+  }
+{% endhighlight %}
+We convert any A-Z chars to a-z and only store a-z chars. Rejecting all else.
+
+Now we get to the most controversial bit. See we dynamically allocate memory in the program (since we don’t know how long it could possibly be) we may even realloc().
+
+But do you see any free()s? No! We simply fall off the program and all that lost memory? Well the OS will pick it up for us. Is this bad form? NO. There is no point free();ing memory if we are closing up. It is slow. It may force the os to unswap and the OS probably wont get it any sooner.
+
+Most of the time you free() you don’t get any more memory for the OS anyways. It’s simply added to malloc()s free list.
+
+Yes if you are on a terrible OS then you may have problems. In that case you should alter your code.
+
+A lot of people on reddit complained that I should have free’d and the world would end if I didn’t some agreed that the OS would take care of it, some even agreed that it was pointless but many still insisted it was just bad form old boy.
+
+This is not the case. There is no good enforcing a “good habit” if you do it to the point it gives you a bad habit! Don’t believe me? [Ask GNU libc](http://www.gnu.org/software/libc/manual/html_node/Freeing-after-Malloc.html).
+
+Enjoy.
+
+Ali

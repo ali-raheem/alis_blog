@@ -34,7 +34,7 @@ struct binarytree_node_s {
 typedef struct binarytree_node_s bintree_node;
 {% endhighlight %}
 
-As elements are added to a binary tree they go on the left or right of a node depending on a comparison function we'll use strcmp for this. And it's a good template for any comparison function you need such as for qsort. It returns a value less than, equal to or greater than zero.
+As elements are added to a binary tree they go on the left or right of a node depending on a comparison function we'll use strcmp for this. And it's a good template for any [comparison function](http://www.gnu.org/software/libc/manual/html_node/Comparison-Functions.html#Comparison-Functions) you need such as for qsort. It returns a value less than, equal to or greater than zero.
 The cool thing about a binary tree is you greatly reduce the number of comparisons you need to do to find an item. If the binarytree contains N items you would need to do on average ln(N+1)/ln(2) searches.
 
 ![Binary Heap trees quickly outperform linked lists]({{ site.url }}/~ali/upload/bintreevlinkedlist.png)

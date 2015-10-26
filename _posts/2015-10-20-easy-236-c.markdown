@@ -24,7 +24,7 @@ const int len = 7;
 int main(int argc, char **argv) {
 	int i = 8;
 	char buffer[56];
-	printf("rand: %d, &i: %x\n", rand, &i);
+//	printf("rand: %d, &i: %p\n", rand, &i);
 	rand += &i;		// I am a filthy pig and should be shot
 
 	while( i-- ){
@@ -40,7 +40,7 @@ void shuffle() {
 	int i, j;
 	/* FIsher-Yates/Knuth shuffle */
 	for(i = len - 1; i >=0 ; i--) {
-		j = rand % len;
+		j = rand % (i + 1);
 		string[len] = string[i];
 		string[i] = string[j];
 		string[j] = string[len];
@@ -61,6 +61,35 @@ Firstly, I don't bother linking to random for my random numbers I use a linear c
 
 I also do the Knuth shuffle myself this is likely what all shuffling implementations do, and certainly what python's random.shuffle() does.
 
+However, the number one mistake I noticed on the reddit thread was _incorrect_ knuth shuffle implementation. The commonest error is shuffling each card into the entire deck. It's pretty lengthy to explain why this is a problem and if I'm honest I don't entirely recall how it's explained in the book I first learnt the algo from... but essentially by doing it this way you introduce a slight extra shuffle towards one side of the deck. Or something... [This link explains it well.](http://blog.codinghorror.com/the-danger-of-naivete/)
+{% highlight c %}
+/*
+This is bad _DO_NOT_ do this.
+*/
+int i, j;
+char *temp;
+char string[] = "SHUFFLE ME!";
+int len = strlen(string);
+for(i = 0; i < len; i++){
+	j = rand(len);		// We screw up here.
+	temp = pieces[i];
+	pieces[i] = pieces[j];
+	pieces[j] = temp;
+}
+/*
+This is how it should be done.
+*/
+int i, j;
+char *temp;
+char string[] = "SHUFFLE ME!";
+int len = strlen(string);
+for(i = 0; i < len; i++){
+	j = rand(len - i);		// This is correct.
+	temp = pieces[i];
+	pieces[i] = pieces[j];
+	pieces[j] = temp;
+}
+{% endhighlight %}
 This is rather simply but there are a few delightful tricks in it. Firstly char [] string is _not a string_ I lose the null termination early. It's a char array. It is a buffer. I use the null byte as my temp storage in the knuth shuffle :)
 
 Also without srand() how do I seed the LCG? Well I use my ASLR of course and attempted to use the uninitialised rand variable however gcc seems to clear the stack in it's prolouge. (nuts...) Still the ASLR provides plenty of randomness for such a simple task.
@@ -78,3 +107,7 @@ This post is a bit belated and the latest challenge is now out 237, however it's
 Python can solve the current challenge in a few lines (like most of them which makes for uninsteresing blog posts!)
 
 Ali
+
+Errata:
+
+25-10-2015 Changed %x to %p this is an odd habit I have, I forget to use %p and end up with a cast warning by using %x.
