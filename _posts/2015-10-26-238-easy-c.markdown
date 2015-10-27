@@ -12,38 +12,40 @@ I make use of the excellent readline library for this.
 Here's the code, the only worth while piece is the capital toggling. I convert ASCII lowercase to caps by adding `'A' -'a'`. Simply shifting it along the ASCII chart.
 
 {% highlight c %}
+// gcc 238-easy.c -lreadline
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <readline/readline.h>
+//#include <readline/readline.h>
 //#include <random.h>
 #include <time.h>
 
 int main(int argc, char **argv) {
   srand(time(NULL));
-  char *line;
-  const char *consonants = "bcdfghjklmnpqrstvwxyz";
-  const char *vowels = "aeiou";
+  char *line = NULL;
+  const char consonants[] = "bcdfghjklmnpqrstvwxyz";
+  const char vowels[] = "aeiou";
   do{
-  line = readline(NULL);
+  free(line);
+  scanf("%ms", &line);
   int i, cap;
-  for(i=0; i<strlen(line); i++) {
+  for(i=0; i < strlen(line); ++i) {
     cap = 0;
     switch (line[i]){
     case 'C':
       cap = 'A' - 'a';
     case 'c':
-      line[i] = consonants[rand()%strlen(consonants)] + cap;
+      line[i] = consonants[rand()%((sizeof consonants) -1)] + cap;
       break;
     case 'V':
       cap = 'A' - 'a';
     case 'v':
-      line[i] = vowels[rand()%strlen(vowels)] + cap;
+      line[i] = vowels[rand()%((sizeof vowels) -1)] + cap;
       break;
     }
   }
   puts(line);
-  }while(0 != strcmp("", line));
+  }while(0 != strlen(line));
 }
 {% endhighlight %}
 
@@ -52,3 +54,12 @@ Note the more orthidox use of the random function :) This actually simply uses a
 Enjoy,
 
 Ali
+
+Errata:
+
+Use scanf instead of readline.
+
+Some minor optimizations removed strlen in favour of sizeof
+
+Preincrement
+
