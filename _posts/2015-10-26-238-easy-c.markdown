@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
   free(line);
   scanf("%ms", &line);
   int i, cap;
-  for(i=0; i < strlen(line); ++i) {
+  for(i=strlen(line) - 1; 0 <= i; ++i) {
     cap = 0;
     switch (line[i]){
     case 'C':
