@@ -56,7 +56,7 @@ One thing to note is that I wanted to compare pre and post increment effectivene
 
 Here is the code and output in it's entirity.
 
-{% highlight c %}
+{% highlight gas %}
 	.file	"test.c"
 	.section	.rodata
 .LC0:
@@ -135,13 +135,15 @@ If you're interested here's a quick overview of the above assembly code.
 
 The first thing to note is that this is the main function _start is provided by libc. The begining of any function in assmbly should be saving any callee save registers that we may clobber on systemv this is rbp, rbx, r12-r15. We don't use r12-r15 so we push rbp and rbx on the stack and pop them off before our ret at .L7. Once this is done we overwrite the base pointer rbp with our stack pointer rsp then "make room on the stack" by moving the rsp down by 40 for our automatic variables which are at offsets -24, -28, -32 and -36 (each are 4 bytes long).
 
-This code was compiled with a stack-protector our first "automatic variable" is actually preloaded with this from %fs:40 which is the file segment. This is random, if you want to see it's contents simply alter .L2 to load it into eax instead of i. movl -36(%rbp), eax become movl -24(%rbp), eax and we'll see it printed in the first for loop.
+This code was compiled with a [stack-protector](https://lwn.net/Articles/584225/), this dubious honour was applied because we have a char array. We're actually at no risk of a stack smash but it seems gcc has been setup to be fairly paranoid when Ubuntu compiled it, possibly with -fstack-protector-strong. Traditionally -fstack-protector only added protrotection if a 8 byte or larger char array was created. Stack-protector uses a canary (secret random integer) infront of the return address thus our first "automatic variable" is actually preloaded with this from %fs:40. This is random, if you want to see it's contents simply alter .L2 to load it into eax instead of i. Thus, `movl -36(%rbp), eax` would become `movl -24(%rbp), eax` and we'll see it printed in the first for loop. It should change each time you run the program, thus it would be unknown to an outside attacker. Not only this but it's value is stored out of the memory mapped to the process (hence the use of %fs - file segment), this way a segmentation fault should occur if someone tries to clumsily access it.
 
-The idea being that at the end of the the main function the latter half of .L4, we will reload it from %fs:40 and then compare it to -24(%rbp) if they don't match then at some point in the main function it was altered this means the "stack has been smashed". If this is the case GCC will jump to __stack_chk_fail and not return from main but abort.
+Canaries need not be random, youalso get "terminator" canaries, not as cool a they sound these are made up o fbytes designed to terminate functions which take input that may be venerable such as gets(). These are made up of a NULL byte (to stop strcpy()), DEL to make string inputs difficult and newline bytes \r\n which will terminate gets() input. Pretty clever.
 
-Should we return from main there is a risk we would be handing control of execution to an attacker.
+The idea being that if the attacker wishes to overwrite our return address they will need to go through our canary. So, at the end of the the main function the latter half of .L4, we will reload it from %fs:40 and then compare it to -24(%rbp) if they don't match then at some point in the main function it was altered since GCC added it in addition to the variables we wanted this means the "stack has been smashed" i.e. for some reason we wrote some code out of bounds. If this is the case GCC has added in a jump to __stack_chk_fail this way we will not return from main but abort.
 
-If all is well we restore our saved registers.
+Had the return address been overwritten and should we return from main there is a risk we would be handing control of execution to an attacker.
+
+If all is well we restore our saved registers by pop'ing them off the stack and then return to libc's _start ([_start_main](http://refspecs.linuxbase.org/LSB_3.1.1/LSB-Core-generic/LSB-Core-generic/baselib---libc-start-main-.html)) who will pass control to an exit function.
 
 The rest of the code is simply providing arguments to printf and strlen and simple counter stuff.
 
