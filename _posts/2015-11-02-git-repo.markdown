@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "New Repo"
+date:   2015-11-02-22-12-00
+categories: site
+---
+
+After several *years* of trying, well actually a couple of hours that felt like years I managed to get [gitweb working](http://wolfmankurd.asuscomm.com). It felt like years cause it should have taken minutes!
+
+Enjoy,
+
+Ali
+
