@@ -3,7 +3,6 @@ layout: page
 title: Watch list
 permalink: /watch-list/
 ---
-
 # Claire and Ali's Watch list
 ***
 
@@ -33,7 +32,6 @@ permalink: /watch-list/
 * Don't Look Now (1973)
 * Martin (1977)
 * Dawn of the Dead (1979)
-* The Shining (1980)
 * The Evil Dead (1981)
 * Fright night (1985)
 * Evil Dead 2: Dead by Dawn (1987)
@@ -84,3 +82,4 @@ permalink: /watch-list/
 * Freaks (1932) - Shit
 * Spectre (2015)
 * Resolution (2012)
+* The Shining (1980)
