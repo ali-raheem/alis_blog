@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Watch list
+title: Claire and Ali's watch list
 permalink: /watch-list/
 ---
-# Claire and Ali's Watch list
-***
 
 ## Movies
 
