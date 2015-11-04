@@ -8,6 +8,13 @@ permalink: /watch-list/
 
 * The Pagemaster (1994)
 * Who Framed Roger Rabbit (1988)
+* The StarWars Saga
+  - A New Hope (1977)
+  - The Empire Strikes Back (1980)
+  - The Return of the Jedi (1983)
+  - The Phantom Menace (1999)
+  - Attack of the Clones (2002)
+  - Revenge of the Sith (2005)
 
 ### Showing in Cinema now
 
@@ -77,11 +84,11 @@ permalink: /watch-list/
 ### Watched
 
 <table>
-<tr><td>Freaks (1932) </td><td>1.5/10</td></tr>
-<tr><td>Spectre (2015) </td><td>6/10</td></tr>
-<tr><td>Resolution (2012) </td><td>5/10</td></tr>
-<tr><td>The Shining (1980) </td><td>7/10</td></tr>
-<tr><td>The Last House on the Left (1972)</td><td> 8/10</td></tr>
-<tr><td>Supergirl (1984) </td><td>4/10</td></tr>
-<tr><td>Countdown (2012) </td><td>8.5/10</td></tr>
+<tr><td>Freaks (1932) </td><td> 1.5/10 </td></tr>
+<tr><td>Spectre (2015) </td><td> 6/10 </td></tr>
+<tr><td>Resolution (2012) </td><td> 5/10 </td></tr>
+<tr><td>The Shining (1980) </td><td> 7/10 </td></tr>
+<tr><td>The Last House on the Left (1972) </td><td> 8/10</td></tr>
+<tr><td>Supergirl (1984) </td><td> 4/10 </td></tr>
+<tr><td>Countdown (2012) </td><td> 8.5/10 </td></tr>
 </table>
