@@ -35,15 +35,7 @@ permalink: /watch-list/
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
 * The Innkeepers (2011)
-* Countdown (2012)
 * It Follows (2015)
-
-## Television
-
-* The Sopranoes
-* Battlestar Galactica
-* Battlestar Galactica - The Original Series
-* Battlestar Galactica - Blood and Chrome
 
 # Bond night movies
 
@@ -73,13 +65,22 @@ permalink: /watch-list/
 * Quantum of Solace (2008)
 * Skyfall (2012)
 
+## Television
+
+* The Sopranoes
+* Battlestar Galactica
+* Battlestar Galactica - The Original Series
+* Battlestar Galactica - Blood and Chrome
+
 ***
 
 ### Watched
-
-* Freaks (1932) - Shit
-* Spectre (2015)
-* Resolution (2012)
-* The Shining (1980)
-* The Last House on the Left (1972)
-* Supergirl (1984)
+Movie      | Score
+----------------------
+* Freaks (1932) |1.5/10
+* Spectre (2015) |6/10
+* Resolution (2012) |5/10
+* The Shining (1980) |7/10
+* The Last House on the Left (1972) |8/10
+* Supergirl (1984) |4/10
+* Countdown (2012) |8.5/10
