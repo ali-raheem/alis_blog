@@ -6,12 +6,13 @@ permalink: /watch-list/
 
 ## Movies
 
-* Supergirl (1984)
+* The Pagemaster (1994)
+* Who Framed Roger Rabbit (1988)
 
 ### Showing in Cinema now
 
-* The Last Witch Hunter
-* Scouts Guide to the Zombie Apocolapse
+* The Last Witch Hunter (2015)
+* Scouts Guide to the Zombie Apocolapse (2015)
 
 ### Horror
 
@@ -26,7 +27,6 @@ permalink: /watch-list/
 * Eyes Without a Face (1962)
 * Repulsion (1965)
 * Night of the Living Dead (1968)
-* The Last House on the Left (1972)
 * Don't Look Now (1973)
 * Martin (1977)
 * Dawn of the Dead (1979)
@@ -81,3 +81,5 @@ permalink: /watch-list/
 * Spectre (2015)
 * Resolution (2012)
 * The Shining (1980)
+* The Last House on the Left (1972)
+* Supergirl (1984)
