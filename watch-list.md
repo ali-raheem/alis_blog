@@ -75,12 +75,13 @@ permalink: /watch-list/
 ***
 
 ### Watched
-Movie      | Score
-----------------------
-Freaks (1932) |1.5/10
-Spectre (2015) |6/10
-Resolution (2012) |5/10
-The Shining (1980) |7/10
-The Last House on the Left (1972) |8/10
-Supergirl (1984) |4/10
-Countdown (2012) |8.5/10
+
+<table>
+<tr><td>Freaks (1932) </td><td>1.5/10</td></tr>
+<tr><td>Spectre (2015) </td><td>6/10</td></tr>
+<tr><td>Resolution (2012) </td><td>5/10</td></tr>
+<tr><td>The Shining (1980) </td><td>7/10</td></tr>
+<tr><td>The Last House on the Left (1972)</td><td> 8/10</td></tr>
+<tr><td>Supergirl (1984) </td><td>4/10</td></tr>
+<tr><td>Countdown (2012) </td><td>8.5/10</td></tr>
+</table>
