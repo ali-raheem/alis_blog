@@ -6,8 +6,6 @@ permalink: /watch-list/
 
 ## Movies
 
-* The Pagemaster (1994)
-* Who Framed Roger Rabbit (1988)
 * The StarWars Saga
   - A New Hope (1977)
   - The Empire Strikes Back (1980)
@@ -15,6 +13,9 @@ permalink: /watch-list/
   - The Phantom Menace (1999)
   - Attack of the Clones (2002)
   - Revenge of the Sith (2005)
+* The Pagemaster (1994)
+* Superman Returns (2009)
+* Man of Steel (2014)
 
 ### Showing in Cinema now
 
@@ -91,4 +92,5 @@ permalink: /watch-list/
 <tr><td>The Last House on the Left (1972) </td><td> 8/10</td></tr>
 <tr><td>Supergirl (1984) </td><td> 4/10 </td></tr>
 <tr><td>Countdown (2012) </td><td> 8.5/10 </td></tr>
+<tr><td>Who Framed Roger Rabbit (1988) </td><td> 8/10 </td></tr>
 </table>
