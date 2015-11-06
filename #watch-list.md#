@@ -5,7 +5,6 @@ permalink: /watch-list/
 ---
 
 ## Movies
-
 * The StarWars Saga
   - A New Hope (1977)
   - The Empire Strikes Back (1980)
@@ -18,12 +17,10 @@ permalink: /watch-list/
 * Man of Steel (2014)
 
 ### Showing in Cinema now
-
 * The Last Witch Hunter (2015)
 * Scouts Guide to the Zombie Apocolapse (2015)
 
 ### Horror
-
 * Das Cabinet des Dr, Caligari. (1920)
 * I Walked with a Zombie (1943)
 * Dead of Night (1945)
@@ -45,7 +42,6 @@ permalink: /watch-list/
 * It Follows (2015)
 
 # Bond night movies
-
 * Dr. No (1962)
 * From Russia with Love (1963)
 * Goldfinger (1964)
@@ -73,7 +69,6 @@ permalink: /watch-list/
 * Skyfall (2012)
 
 ## Television
-
 * The Sopranoes
 * Battlestar Galactica
 * Battlestar Galactica - The Original Series
