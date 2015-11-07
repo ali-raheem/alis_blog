@@ -101,20 +101,45 @@ All we are really doing here is adding size to the a and b each iteraction altho
 
 In the end curiousity got the better of me and I had to check so here it is:
 {% highlight gas %}
-; inner for loop, r12d = j, r15d = i
-; r13 = n, %rbp = a*, %rbx = b*
-.L9:
-	cmpl	%r12d, %r15d 	; if(j and i)
-	je	.L8		; continue
-	addq	%r13, %rbp      ; add size to a
-	addq	%r13, %rbx      ; add size to b
-	movq	%rbx, %rsi
-	movq	%rbp, %rdi      ;
-	call	*%r14           ;
-	cmpl	$1, %eax       	;do memcpy
-	je	.L21            ;
+; rbx contains size
+; r12 and r14 are a and b 8(rsp) contains temp
+; Hint: look at .L20 and compare to source to identify temp, a, b and size
+;the man page for memcpy will help
+.L7:
+	subl	$1, %r15d
+	subq	%rbx, %r14 ; decrement b by size
+	cmpl	$-1, %r15d
+	jne	.L8
+	movl	16(%rsp), %eax
+	testl	%eax, %eax
+	je	.L9
+	subl	$1, %ebp
+	cmpl	$-1, %ebp
+	je	.L9
+	subq	%rbx, %r12 ; decrement a by size
+	movq	24(%rsp), %r14
+	movl	20(%rsp), %r15d
+	jmp	.L10
+	.p2align 4,,10
+	.p2align 3
+.L20:
+	movq	8(%rsp), %rdi
+	movq	%rbx, %rdx
+	movq	%r12, %rsi
+	call	memcpy
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	movq	%r12, %rdi
+	call	memcpy
+	movq	8(%rsp), %rsi
+	movq	%rbx, %rdx
+	movq	%r14, %rdi
+	call	memcpy
+	movl	$1, 16(%rsp)
+	jmp	.L7
+
 {% endhighlight %}
-It clearly incrmements by size instead of a nasty multiplication.
+It clearly decrmements by size instead of a nasty multiplication.
 
 I'll write up another sorting method soon.
 
