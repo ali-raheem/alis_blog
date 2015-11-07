@@ -91,10 +91,12 @@ This is kind of signature is super powerful and good enough for small or nearly 
 The following code snippet uses the same bubble sort to sort string and then a contrived array of "Person" structs by age using a simple custom person_compar function.
 
 It's nearly done, I'm not entirely happy with it, if you're interested a useful optimization to do (that the compiler probably does) is rather than doing the multiplication for the pointers a and b. To convert this to an addition.
+
 {% highlight c %}
-      a = array+i*size;
-      b = array+j*size;
+a = array+i*size;
+b = array+j*size;
 {% endhighlight %}
+
 All we are really doing here is adding size to the a and b each iteraction although it's tolerent of continues and breaks etc because it simply increments. It'd be a useful optmization  and I think would look substantially neater and less intimidating but... I'm sure with modern hardware the multiplication is no more taxing than the pointer arithmetic.
 
 I'll write up another sorting method soon.
