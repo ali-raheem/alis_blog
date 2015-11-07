@@ -55,6 +55,37 @@ void bubble_sort (void *array, size_t nmemb, size_t size, int (*compar)(const vo
 
 It's very generic which requires you pass it the size of the elements and a comparison function (which should return 1, 0, -1 ala strcmp). Notice therefore we need to use memcpy to move elements around.
 
+{% highlight c %}
+int person_cmp (const void *a, const void *b) {
+  Person *da = (Person *) a;
+  Person *db = (Person *) b;
+  int ca = da->age;
+  int cb = db->age;
+  return (ca < cb) ? -1 : (ca > cb);
+}
+{% endhighlight %}
+
+This is the comparison function, our bubble_sort passes it void * but it's messy continuously dereferencing null points so we sanitise them to (Person *). Then we simply somehow come up with a way to compare them. The return statement I use is the easiest way and the compiler should handle it very well.
+
+Actually I checked it and it gcc performed excellently.
+
+{% highlight gasm %}
+	cmpl	%eax, %edx
+	jb	.L2
+	movl	-16(%rbp), %edx
+	movl	-12(%rbp), %eax
+	cmpl	%eax, %edx
+	seta	%al
+	movzbl	%al, %eax
+	jmp	.L4
+.L2:
+	movl	$-1, %eax
+.L4:
+;clear up and return
+{% endhighlight %}
+
+This is what I mean by writing good portable assembler C, that and a good compiler produces exactly what a good human programmer would come up with.
+
 This is super powerful and good enough for small or nearly sorted arrays. According to Wikipedia insertion sorts although more complex perform better in both these areas.
 
 The following code snippet uses the same bubble sort to sort string and then a contrived array of "Person" structs by age using a simple custom person_compar function.
