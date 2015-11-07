@@ -4,7 +4,7 @@ title: Claire and Ali's watch list
 permalink: /watch-list/
 ---
 
-## Movies
+### Movies
 * The StarWars Saga
   - A New Hope (1977)
   - The Empire Strikes Back (1980)
@@ -16,11 +16,11 @@ permalink: /watch-list/
 * Superman Returns (2009)
 * Man of Steel (2014)
 
-### Showing in Cinema now
+#### Showing in Cinema now
 * The Last Witch Hunter (2015)
 * Scouts Guide to the Zombie Apocolapse (2015)
 
-### Horror
+#### Horror
 * Das Cabinet des Dr, Caligari. (1920)
 * I Walked with a Zombie (1943)
 * Dead of Night (1945)
@@ -40,7 +40,7 @@ permalink: /watch-list/
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
 
-### Bond night movies
+#### Bond night movies
 * Dr. No (1962)
 * From Russia with Love (1963)
 * Goldfinger (1964)
@@ -67,14 +67,15 @@ permalink: /watch-list/
 * Quantum of Solace (2008)
 * Skyfall (2012)
 
-## Television
+### Television
 * The Sopranoes
 * Battlestar Galactica
 * Battlestar Galactica - The Original Series
 * Battlestar Galactica - Blood and Chrome
 
 ***
-## Watched
+
+### Watched
 <table>
 <tr><td>Freaks (1932) </td><td> 1.5/10 </td></tr>
 <tr><td>Spectre (2015) </td><td> 6/10 </td></tr>
