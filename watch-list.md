@@ -26,7 +26,6 @@ permalink: /watch-list/
 * Dead of Night (1945)
 * House of Wax (1953)
 * The Night of the Hunter (1955)
-* House on the Haunted Hill (1959)
 * The Fall of the House of the Usher (1960)
 * Village of the Damned (1960)
 * Eyes Without a Face (1962)
@@ -87,4 +86,5 @@ permalink: /watch-list/
 <tr><td>Who Framed Roger Rabbit (1988) </td><td> 8/10 </td></tr>
 <tr><td>The Innkeepers (2011) </td><td> 3.5/10 </td></tr>
 <tr><td>It Follows (2015) </td><td> 3.5/10 </td></tr>
+<tr><td>House on the Haunted Hill (1959) </td><td> 3/10 </td></tr>
 </table>
