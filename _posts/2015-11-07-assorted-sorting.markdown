@@ -90,7 +90,7 @@ This is kind of signature is super powerful and good enough for small or nearly 
 
 The following code snippet uses the same bubble sort to sort string and then a contrived array of "Person" structs by age using a simple custom person_compar function.
 
-Coming up insertion sorting.
+I'll write up another sorting method soon.
 
 Enjoy,
 
