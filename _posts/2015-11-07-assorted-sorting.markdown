@@ -101,7 +101,9 @@ All we are really doing here is adding size to the a and b each iteraction altho
 
 In the end curiousity got the better of me and I had to check so here it is:
 {% highlight gas %}
-.L9:				; inner for loop, r12d = j, r15d = j, r13 = n, %rbp = a*, %rbx = b*
+; inner for loop, r12d = j, r15d = i
+; r13 = n, %rbp = a*, %rbx = b*
+.L9:
 	cmpl	%r12d, %r15d 	; if(j and i)
 	je	.L8		; continue
 	addq	%r13, %rbp      ; add size to a
