@@ -39,7 +39,6 @@ permalink: /watch-list/
 * Fright night (1985)
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
-* It Follows (2015)
 
 # Bond night movies
 * Dr. No (1962)
@@ -88,4 +87,5 @@ permalink: /watch-list/
 <tr><td>Countdown (2012) </td><td> 8.5/10 </td></tr>
 <tr><td>Who Framed Roger Rabbit (1988) </td><td> 8/10 </td></tr>
 <tr><td>The Innkeepers (2011) </td><td> 3.5/10 </td></tr>
+<tr><td>It Follows (2015) </td><td> 3.5/10 </td></tr>
 </table>
