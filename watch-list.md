@@ -40,7 +40,7 @@ permalink: /watch-list/
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
 
-# Bond night movies
+### Bond night movies
 * Dr. No (1962)
 * From Russia with Love (1963)
 * Goldfinger (1964)
@@ -74,9 +74,7 @@ permalink: /watch-list/
 * Battlestar Galactica - Blood and Chrome
 
 ***
-
-### Watched
-
+## Watched
 <table>
 <tr><td>Freaks (1932) </td><td> 1.5/10 </td></tr>
 <tr><td>Spectre (2015) </td><td> 6/10 </td></tr>
