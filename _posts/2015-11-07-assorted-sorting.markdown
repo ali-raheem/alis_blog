@@ -51,7 +51,7 @@ void bubble_sort (void *array, size_t nmemb, size_t size, int (*compar)(const vo
   }
   free(temp);
 }
-{% end highlight %}
+{% endhighlight %}
 
 It's very generic which requires you pass it the size of the elements and a comparison function (which should return 1, 0, -1 ala strcmp). Notice therefore we need to use memcpy to move elements around.
 
@@ -152,5 +152,5 @@ int main (int argc, char **argv) {
     printf("%s is %u years old.\n", contacts[i].name, contacts[i].age);
   }
 }
-{% end highlight %}
+{% endhighlight %}
 
