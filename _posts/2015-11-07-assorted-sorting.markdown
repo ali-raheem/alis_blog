@@ -100,7 +100,7 @@ b = array+j*size;
 All we are really doing here is adding size to the a and b each iteraction although it's tolerent of continues and breaks etc because it simply increments. It'd be a useful optmization  and I think would look substantially neater and less intimidating but... I'm sure with modern hardware the multiplication is no more taxing than the pointer arithmetic.
 
 In the end curiousity got the better of me and I had to check so here it is:
-{% highlight c %}
+{% highlight gas %}
 .L9:				; inner for loop, r12d = j, r15d = j, r13 = n, %rbp = a*, %rbx = b*
 	cmpl	%r12d, %r15d 	; if(j and i)
 	je	.L8		; continue
@@ -111,7 +111,7 @@ In the end curiousity got the better of me and I had to check so here it is:
 	call	*%r14           ;
 	cmpl	$1, %eax       	;do memcpy
 	je	.L21            ;
-{% endhiglight %}
+{% endhighlight %}
 It clearly incrmements by size instead of a nasty multiplication.
 
 I'll write up another sorting method soon.
