@@ -69,7 +69,7 @@ This is the comparison function, our bubble_sort passes it void * but it's messy
 
 Actually I checked it and it gcc performed excellently.
 
-{% highlight gasm %}
+{% highlight gas %}
 	cmpl	%eax, %edx
 	jb	.L2
 	movl	-16(%rbp), %edx
