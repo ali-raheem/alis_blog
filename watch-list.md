@@ -79,7 +79,7 @@ permalink: /watch-list/
 ***
 
 ### Watched
-<table>
+<table callpadding="20">
 <tr><td>Freaks (1932) </td><td> 1.5/10 </td><td> Shit </td></tr>
 <tr><td>Spectre (2015) </td><td> 6/10 </td></tr>
 <tr><td>Resolution (2012) </td><td> 5/10 </td></tr>
