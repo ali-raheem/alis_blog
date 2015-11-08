@@ -29,7 +29,6 @@ permalink: /watch-list/
 * The Fall of the House of the Usher (1960)
 * Village of the Damned (1960)
 * Eyes Without a Face (1962)
-* Repulsion (1965)
 * Night of the Living Dead (1968)
 * Don't Look Now (1973)
 * Martin (1977)
@@ -38,6 +37,11 @@ permalink: /watch-list/
 * Fright night (1985)
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
+* Audition (1999)
+* House of the Devil (2009)
+* Black Death (2010)
+* Dark Touch (2013)
+* Mockingbird (2014)
 
 #### Bond night movies
 * Dr. No (1962)
@@ -76,7 +80,7 @@ permalink: /watch-list/
 
 ### Watched
 <table>
-<tr><td>Freaks (1932) </td><td> 1.5/10 </td></tr>
+<tr><td>Freaks (1932) </td><td> 1.5/10 </td><td> Shit </td></tr>
 <tr><td>Spectre (2015) </td><td> 6/10 </td></tr>
 <tr><td>Resolution (2012) </td><td> 5/10 </td></tr>
 <tr><td>The Shining (1980) </td><td> 7/10 </td></tr>
@@ -84,7 +88,8 @@ permalink: /watch-list/
 <tr><td>Supergirl (1984) </td><td> 4/10 </td></tr>
 <tr><td>Countdown (2012) </td><td> 8.5/10 </td></tr>
 <tr><td>Who Framed Roger Rabbit (1988) </td><td> 8/10 </td></tr>
-<tr><td>The Innkeepers (2011) </td><td> 3.5/10 </td></tr>
+<tr><td>The Innkeepers (2011) </td><td> 3.5/10 </td><td> Nothing happened</td></tr>
 <tr><td>It Follows (2015) </td><td> 3.5/10 </td></tr>
-<tr><td>House on the Haunted Hill (1959) </td><td> <3/10 </td></tr>
+<tr><td>House on the Haunted Hill (1959) </td><td> 3/10 </td><td> No haunting </td></tr>
+<tr><td>Repulsion (1965) </td><td> 1/10 </td><td> Theatrical abortion </td></tr>
 </table>
