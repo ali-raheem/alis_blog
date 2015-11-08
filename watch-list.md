@@ -92,4 +92,5 @@ permalink: /watch-list/
 <tr><td>It Follows (2015) </td><td> 3.5/10 </td></tr>
 <tr><td>House on the Haunted Hill (1959) </td><td> 3/10 </td><td> No haunting </td></tr>
 <tr><td>Repulsion (1965) </td><td> 1/10 </td><td> Theatrical abortion </td></tr>
+<tr><td>The Lazarus Effect (2015) </td><td> 5/10 </td><td> Spookey Lucy </td></tr>
 </table>
