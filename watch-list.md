@@ -39,7 +39,6 @@ permalink: /watch-list/
 * The Nightmare Before Christmas (1993)
 * Audition (1999)
 * Black Death (2010)
-* Dark Touch (2013)
 
 #### Bond night movies
 * Dr. No (1962)
@@ -91,7 +90,8 @@ permalink: /watch-list/
 <tr><td>House on the Haunted Hill (1959) </td><td> 3/10 </td><td> No haunting </td></tr>
 <tr><td>Repulsion (1965) </td><td> 1/10 </td><td> Theatrical abortion </td></tr>
 <tr><td>The Lazarus Effect (2015) </td><td> 5/10 </td><td> Spookey Lucy </td></tr>
-<tr><td>Circle (2015) </td><td> 6/10 </td></tr>
+<tr><td>Circle (2015) </td><td> 6/10 </td><td> Ali's choice </td></tr>
 <tr><td>Cruel & Unusual (2014) </td><td> 7/10 </td></tr>
 <tr><td>Mockingbird (2014) </td><td> 4/10 </td><td> Lost 1pt for last minute </td></tr>
+<tr><td>Dark Touch (2013) </td><td> 3/10 </td><td> Claire's choice </td></tr>
 </table>
