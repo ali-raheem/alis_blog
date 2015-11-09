@@ -38,7 +38,6 @@ permalink: /watch-list/
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
 * Audition (1999)
-* House of the Devil (2009)
 * Black Death (2010)
 * Dark Touch (2013)
 * Mockingbird (2014)
@@ -93,4 +92,6 @@ permalink: /watch-list/
 <tr><td>House on the Haunted Hill (1959) </td><td> 3/10 </td><td> No haunting </td></tr>
 <tr><td>Repulsion (1965) </td><td> 1/10 </td><td> Theatrical abortion </td></tr>
 <tr><td>The Lazarus Effect (2015) </td><td> 5/10 </td><td> Spookey Lucy </td></tr>
+<tr><td>Circle (2015) </td><td> 6/10 </td></tr>
+<tr><td>Cruel & Unusual (2014) </td><td> 7/10 </td></tr>
 </table>
