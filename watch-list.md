@@ -93,5 +93,5 @@ permalink: /watch-list/
 <tr><td>The Lazarus Effect (2015) </td><td> 5/10 </td><td> Spookey Lucy </td></tr>
 <tr><td>Circle (2015) </td><td> 6/10 </td></tr>
 <tr><td>Cruel & Unusual (2014) </td><td> 7/10 </td></tr>
-<tr><td>Mockingbird (2014) </td><td> 5/10 </td><td> Lost 1pt for last minute </td></tr>
+<tr><td>Mockingbird (2014) </td><td> 4/10 </td><td> Lost 1pt for last minute </td></tr>
 </table>
