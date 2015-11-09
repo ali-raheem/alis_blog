@@ -1,4 +1,4 @@
----
+------
 layout: page
 title: Claire and Ali's watch list
 permalink: /watch-list/
@@ -40,7 +40,6 @@ permalink: /watch-list/
 * Audition (1999)
 * Black Death (2010)
 * Dark Touch (2013)
-* Mockingbird (2014)
 
 #### Bond night movies
 * Dr. No (1962)
@@ -94,4 +93,5 @@ permalink: /watch-list/
 <tr><td>The Lazarus Effect (2015) </td><td> 5/10 </td><td> Spookey Lucy </td></tr>
 <tr><td>Circle (2015) </td><td> 6/10 </td></tr>
 <tr><td>Cruel & Unusual (2014) </td><td> 7/10 </td></tr>
+<tr><td>Mockingbird (2014) </td><td> 5/10 </td><td> Lost 1pt for last minute </td></tr>
 </table>
