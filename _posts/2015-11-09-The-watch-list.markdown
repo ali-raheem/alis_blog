@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Watch list"
+title:  "The Watch List"
 date:   2015-11-09-16-55-00
 categories: site
 ---
