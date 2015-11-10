@@ -16,10 +16,6 @@ permalink: /watch-list/
 * Superman Returns (2009)
 * Man of Steel (2014)
 
-#### Showing in Cinema now
-* The Last Witch Hunter (2015)
-* Scouts Guide to the Zombie Apocolapse (2015)
-
 #### Horror
 * Das Cabinet des Dr, Caligari. (1920)
 * I Walked with a Zombie (1943)
@@ -94,4 +90,5 @@ permalink: /watch-list/
 <tr><td>Cruel & Unusual (2014) </td><td> 7/10 </td></tr>
 <tr><td>Mockingbird (2014) </td><td> 4/10 </td><td> Lost 1pt for last minute </td></tr>
 <tr><td>Dark Touch (2013) </td><td> 3/10 </td><td> Claire's choice </td></tr>
+<tr><td>The Signal (2014) </td><td> 5.5/10 </td></tr>
 </table>
