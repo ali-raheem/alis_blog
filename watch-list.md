@@ -68,6 +68,7 @@ permalink: /watch-list/
 * Battlestar Galactica
 * Battlestar Galactica - The Original Series
 * Battlestar Galactica - Blood and Chrome
+* The Twilight Zone - Nick of Time
 
 ***
 
@@ -91,4 +92,6 @@ permalink: /watch-list/
 <tr><td>Mockingbird (2014) </td><td> 4/10 </td><td> Lost 1pt for last minute </td></tr>
 <tr><td>Dark Touch (2013) </td><td> 3/10 </td><td> Claire's choice </td></tr>
 <tr><td>The Signal (2014) </td><td> 5.5/10 </td></tr>
+<tr><td>Return to Sender (2015) </td><td> 2/10 </td></tr>
+<tr><td>Time Lapse (2014) </td><td> 7.5/10 </td></tr>
 </table>
