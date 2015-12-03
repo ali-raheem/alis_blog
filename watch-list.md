@@ -34,7 +34,6 @@ permalink: /watch-list/
 * Evil Dead 2: Dead by Dawn (1987)
 * The Nightmare Before Christmas (1993)
 * Audition (1999)
-* Black Death (2010)
 
 #### Bond night movies
 * Dr. No (1962)
@@ -65,7 +64,6 @@ permalink: /watch-list/
 
 ### Television
 * The Sopranoes
-* Battlestar Galactica
 * Battlestar Galactica - The Original Series
 * Battlestar Galactica - Blood and Chrome
 * The Twilight Zone - Nick of Time
@@ -94,4 +92,6 @@ permalink: /watch-list/
 <tr><td>The Signal (2014) </td><td> 5.5/10 </td></tr>
 <tr><td>Return to Sender (2015) </td><td> 2/10 </td></tr>
 <tr><td>Time Lapse (2014) </td><td> 7.5/10 </td></tr>
+<tr><td>Black Death (2010) </td><td> 6/10 </td></tr>
+<tr><td>Battlestar Galactica </td><td> 9/10 </td></tr>
 </table>
