@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "NEw website pgp key"
+title:  "New website pgp key"
 date:   2015-12-07-16-12-00
 categories: site
 ---
 
-Just uploaded the new website related PGP key you can [~/ali/aliraheem_smartcard_publickey.txt](find it here).
+Just uploaded the new website related PGP key you can (~/ali/aliraheem_smartcard_publickey.txt)[find it here].
 
 Enjoy,
 Ali
