@@ -5,7 +5,7 @@ date:   2015-12-07-16-12-00
 categories: site
 ---
 
-Just uploaded the new website related PGP key you can [find it here]({{ site.url }}/~/ali/aliraheem_smartcard_publickey.txt).
+Just uploaded the new website related PGP key you can [find it here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
 
 Enjoy,
 Ali
