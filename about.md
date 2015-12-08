@@ -10,7 +10,10 @@ You'll find some of my more interesting stuff and some personal work on github u
 
 You can find my site related PGP public key [key here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
 
-And my bit message address (for the blog) is: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
+To prevent spam you'll have to get my email from my PGP key.
 
+And my bit message address (for the blog) is:
+
+BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
 ![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/bitmessage_address.png)
 
