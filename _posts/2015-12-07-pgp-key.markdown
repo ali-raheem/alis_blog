@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "New website pgp key"
+title:  "New website contact details"
 date:   2015-12-07-16-12-00
 categories: site
 ---
+
+Having a bit of a security reshuffle now that I have some spare time, so I've got a site related PGP key and BM address.
 
 Just uploaded the new website related PGP key you can [find it here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
 
