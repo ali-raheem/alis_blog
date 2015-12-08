@@ -7,5 +7,11 @@ categories: site
 
 Just uploaded the new website related PGP key you can [find it here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
 
+I'd encourage corrispondance via BitMessage (not to endorse it but purely because I am curious.) Surely there is nothing to loose if the data is PGP encrypted.
+
+My BitMessage address for this blog is: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
+
+![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/bitmessage_address.png)
+
 Enjoy,
 Ali
