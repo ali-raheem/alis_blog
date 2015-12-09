@@ -15,7 +15,7 @@ An alternative I am trying out is bitmessage, my blog bitmessage address is:
 BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
 ![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/upload/bitmessage_address.png)
 
-Find out more about bitcoin [here](https://bitmessage.org/wiki/Main_Page) and [here](https://www.reddit.com/r/bitmessage). Bitmessage is experiemental and should not be relied upon for security or privacy, although that is the end goals. If you are worried about this go ahead and PGP encrypt the message.
+Find out more about bitmessage [here](https://bitmessage.org/wiki/Main_Page) and on a subreddit with some more featureful software [here](https://www.reddit.com/r/bitmessage). Bitmessage is experiemental and should not be relied upon for security or privacy, although that is the end goals. If you are worried about this go ahead and PGP encrypt the message.
 
 Feel free to drop me a line, it gets lonely on bitmessage :D
 
