@@ -22,4 +22,4 @@ Feel free to drop me a line, it gets lonely on bitmessage :D
 Tip Jar - goes towards running tor bridge, relay and a hidden service.
 
 13vAwTea4CzZFjthoee7RzLpH9MReZwBhk
-![Bitcoin tipjar: 13vAwTea4CzZFjthoee7RzLpH9MReZwBhk]({{ site.url }}~ali/uploads/tipjar.png)
+![Bitcoin tipjar: 13vAwTea4CzZFjthoee7RzLpH9MReZwBhk]({{ site.url }}~ali/upload/tipjar.png)
