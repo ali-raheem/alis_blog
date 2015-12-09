@@ -15,7 +15,7 @@ To prevent spam you'll have to get my email from my PGP key.
 And my bit message address (for the blog) is:
 
 BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
-![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/uploads/bitmessage_address.png)
+![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/upload/bitmessage_address.png)
 
 Feel free to drop me a line, it gets lonely on bitmessage :D
 

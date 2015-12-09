@@ -15,7 +15,7 @@ My BitMessage address for this blog is:
 
 
 BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb
-![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/uploads/bitmessage_address.png)
+![BitMessage addy: BM-NBUJc7oLbXkR2Az6VsYZ3baU9USTEtAb]({{ site.url }}~ali/upload/bitmessage_address.png)
 
 Enjoy,
 Ali
