@@ -7,7 +7,7 @@ categories: site
 
 Having a bit of a security reshuffle now that I have some spare time, so I've got a site related PGP key and BM address.
 
-Just uploaded the new website related PGP key you can [find it here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
+Just uploaded the new website related PGP key you can [find it here]({{ site.url }}~ali/upload/aliraheem_smartcard_publickey.txt).
 
 I'd encourage corrispondance via BitMessage (not to endorse it but purely because I am curious.) Surely there is nothing to loose if the data is PGP encrypted.
 

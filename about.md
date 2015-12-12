@@ -6,7 +6,7 @@ permalink: /about/
 
 I am Ali Raheem, in my spare time I like to program and generally hack. You'll find some of my more interesting stuff and some personal work on github under the username [wolfmankurd](https://github.com/wolfmankurd/).
 
-If you're contacting me I encourage you take a copy of my public key and add it to your key ring. I always appreciate the effort it takes to encrypt communications and this is prefered. You can find my site related PGP public [key here]({{ site.url }}~ali/aliraheem_smartcard_publickey.txt).
+If you're contacting me I encourage you take a copy of my public key and add it to your key ring. I always appreciate the effort it takes to encrypt communications and this is prefered. You can find my site related PGP public [key here]({{ site.url }}~ali/upload/aliraheem_smartcard_publickey.txt).
 
 If you'd like to email me you can find it in the Public key (to prevent spam I wont publish it here), it's also on my github page should you be unable/ unwilling to check out my public key.
 
