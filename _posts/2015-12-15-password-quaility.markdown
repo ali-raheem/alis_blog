@@ -7,7 +7,9 @@ categories: site
 
 I thought I'd have a quick look at the quaility of my passwords. Not my main passwords these are all managed by KeePassX and are ridiculously long and random. But some of my passwords have to be simple and memorable (for example the one I use to access the KeePassX databases).
 
-Well how do you gauge the quality of a password? We all know it should be long, not a dictionary word and involve a variety of character types. But why? It all comes down to entropy.
+Well how do you gauge the quality of a password? We all know it should be long, not a dictionary word and involve a variety of character types. But why? It all comes down to entropy. Lets ignore the format the password, it could be hexidecimal, it could be ascii characters, it could be a RSA private key. In effect these are all numbers, it doesn't matter if those numbers represent the English alphabet or a large prime number. We don't need to deal with the actually number involved just how much unique data it provides or more accurately how many unique pieces of information we could identify.
+
+Fun fact, you'd only need about 32 bits to identify everyone on Earth.
 
 Simply, lets assume you don't use a dictionary password or something that could be gotten by word-mangling attacks. We have to fall back to bruteforcing and any password becomes crackable given enough time. The longer the better, other than a direct attack on you, it's likely the hacker will use a rainbow table. Without a unique salt the hacker can scan the database for matches with hashes making his life easier.
 
@@ -15,7 +17,7 @@ What makes a good password? It has to have high total entropy, this is roughly l
 
 If our password is all lower case characters then there are 26 options and so we need at least ln(26)/ln(2) bits to encode it. ln(26)/ln(2) is 4.700 so a 8 charecter password gives us 37.604 bits of entropy (security) and 16 characters gives us 75.207 . So how much entropy is enough? Really thats up to you but it depends on the rest of your security. If you're using AES-256 theoretically your maximum security if 256 bits, and it's likely your password will the weakest link. If you password doesn't provide at least 128 bits og of security you'd be better off sticking to AES-128 since the rest is wasted. You may want to use AES-256 instead to slow down bruteforce attempts and incase you are worried about AES being broken (How likely is that??)...
 
-Anyways, most of my memoriable passwords are over 128 bits. How? I tend to use phrases. Like "How could you hate the snow?" Over 180 bits. Now of course this isn't entirely random it's English. So if you have a "q" it's almost certainly going to be followed by a "u", in effect that "u" provides almost no entropy. But since no one, other than you ;) knows I use English phrases we're safe. If they knew this the could reduce the character set to the English words and a handful of punctuation with simple mangling (Capitalise proper nouns and first letter).
+Anyways, most of my passwords pass 100 bits of security. How? I tend to use phrases. Like "How could you hate the snow?" Over 180 bits. Now of course this isn't entirely random it's English. So if you have a "q" it's almost certainly going to be followed by a "u", in effect that "u" provides almost no entropy. But since no one, other than you ;) knows I use English phrases we're safe. If they knew this the could reduce the character set to the English words and a handful of punctuation with simple mangling (Capitalise proper nouns and first letter).
 
 It gets tedious estimate entropy yourself, try this C snippet to do it for you, it assumes the attacker only includes certain chars to his charset in chunks, for example, he wont use lower case and "H", he'd include the entire upper case charset too. It treats punctuation and other special characters seperatly.
 
