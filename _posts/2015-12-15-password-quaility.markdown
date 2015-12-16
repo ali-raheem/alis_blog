@@ -43,8 +43,7 @@ int main(int argc, char **argv) {
   }
 
   int i;
-  //  unsigned int i = strlen(argv[1]) - 1;
-  for(i = 0; i < strlen(argv[1]); ++i){
+  for(i = strlen(argv[1]); 0 <= i; --i){
     char temp = argv[1][i];
     if('A' <= temp && 'Z' >= temp)
       flags.upper = 1;
