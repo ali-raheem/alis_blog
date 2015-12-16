@@ -9,7 +9,7 @@ I thought I'd have a quick look at the quaility of my passwords. Not my main pas
 
 Well how do you gauge the quality of a password? We all know it should be long, not a dictionary word and involve a variety of character types. But why? It all comes down to entropy. Lets ignore the format the password, it could be hexidecimal, it could be ascii characters, it could be a RSA private key. In effect these are all numbers, it doesn't matter if those numbers represent the English alphabet or a large prime number. We don't need to deal with the actually number involved just how much unique data it provides or more accurately how many unique pieces of information we could identify.
 
-Fun fact, you'd only need about 32 bits to identify everyone on Earth.
+Fun fact, you'd only need about 32 bits to identify everyone on Earth. At 256 bits it'd likely take more energy than available int he universe to crack it. In effect you're counting up to 2^255 on average to crack a 256bit key.
 
 Simply, lets assume you don't use a dictionary password or something that could be gotten by word-mangling attacks. We have to fall back to bruteforcing and any password becomes crackable given enough time. The longer the better, other than a direct attack on you, it's likely the hacker will use a rainbow table. Without a unique salt the hacker can scan the database for matches with hashes making his life easier.
 
