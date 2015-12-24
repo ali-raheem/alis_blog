@@ -7,7 +7,7 @@ categories: site
 
 I use TAILS for about 90% of my browsing no matter what it is, reading reddit.com, checking someone out on wikipedia or even reading the news.
 
-This way I dont need to bother with my worrying about leaving a footprint.
+This way I don't need to bother with my worrying about leaving a footprint.
 
 The only problem is I end up with a million different throwaway accounts I couldn't touch again if I wanted (they have weak password but I've forgotten them). Usually I know where they are, for example, user not_a_real_account on reddit.com. But what on earth did I use for the password?
 
