@@ -32,7 +32,7 @@ while 1:
       passwd.update(uname)
       passwd.update(hseed)
       print passwd.hexdigest()[0:24]
-{% end highlight %}
+{% endhighlight %}
 
 This script is all you need, and this page is an easy place to find it. You could even put it on your own little gist.
 
