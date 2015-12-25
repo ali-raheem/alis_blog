@@ -47,3 +47,5 @@ Please get in touch with me if you see a weakness in this. The security depends 
 Check out my previous posts for an example of a strong seed/passphrase that will net you >200bits of security.
 
 Enjoy your new privacy!
+
+Ali
