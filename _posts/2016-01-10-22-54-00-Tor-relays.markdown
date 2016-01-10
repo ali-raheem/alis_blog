@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Tor relays"
+date:   2016-01-10-22-54-00
+categories: site
+---
+
+I've brought up two more tor relays (rather than bridges) they ran as exit nodes for about a week before that became untenable. Now they are running as open tor relays (unfortunately the IPs wouldn't work well as bridges as they are black listed.)
+
+Find them here tor.theraheemfamily.co.uk and tor1.theraheemfamily.co.uk.
+
+Enjoy,
+
+Ali
